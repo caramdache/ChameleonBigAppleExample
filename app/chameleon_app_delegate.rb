@@ -1,5 +1,5 @@
 class ChameleonAppDelegate
-  def applicationDidFinishLaunching(application)
+  def application(application, didFinishLaunchingWithOptions:launchOptions)
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.applicationFrame)
     @window.backgroundColor = UIColor.whiteColor
     @window.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight
@@ -15,6 +15,7 @@ class ChameleonAppDelegate
     @window.addSubview(@sillyButton)
 
     @window.makeKeyAndVisible
+    true
   end
 
   def moveTheApple(sender)

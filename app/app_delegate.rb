@@ -6,6 +6,7 @@ class AppDelegate
 
   def applicationDidFinishLaunching(notification)
     buildWindow
+    buildMenu
 
     @chameleonApp = ChameleonAppDelegate.alloc.init
     @chameleonNSView.launchApplicationWithDelegate(@chameleonApp, afterDelay:1)

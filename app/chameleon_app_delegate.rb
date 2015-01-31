@@ -17,10 +17,6 @@ class ChameleonAppDelegate
     @window.makeKeyAndVisible
   end
 
-  def dealloc
-    @window.release
-  end
-
   def moveTheApple(sender)
     UIView.beginAnimations("moveTheApple", context:nil)
     UIView.setAnimationDuration(3)

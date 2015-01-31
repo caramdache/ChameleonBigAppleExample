@@ -6,6 +6,6 @@ require 'ib'
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
   app.name = 'BigApple'
-  app.info_plist['NSMainNibFile'] = 'MainMenu'
+  #app.info_plist['NSMainNibFile'] = 'MainMenu'
   app.embedded_frameworks = ['vendor/UIKit.framework']
 end
